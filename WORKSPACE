@@ -22,23 +22,23 @@ load(
 
 http_archive(
     name = "bazel_toolchains",
-    sha256 = "bcaa7239f4692054a7abcbcdb1f296f200cbe8a6c8c37bde485b3f3a0929a3c8",
-    strip_prefix = "bazel-toolchains-c6c7c4e850d9668d81aca2c7193b739755aa2fb5",
-    urls = ["https://github.com/bazelbuild/bazel-toolchains/archive/c6c7c4e850d9668d81aca2c7193b739755aa2fb5.tar.gz"],
+    sha256 = "b74b48aff73a8a9a2382404dd91d5a507762a9f7fa61772a9b8d06173b922370",
+    strip_prefix = "bazel-toolchains-add33a2bc6a7abb5ecca73cfdfea77a119007ba6",
+    urls = ["https://github.com/bazelbuild/bazel-toolchains/archive/add33a2bc6a7abb5ecca73cfdfea77a119007ba6.tar.gz"],
 )
 
 http_archive(
     name = "io_bazel_rules_docker",
-    sha256 = "aed1c249d4ec8f703edddf35cbe9dfaca0b5f5ea6e4cd9e83e99f3b0d1136c3d",
-    strip_prefix = "rules_docker-0.7.0",
-    urls = ["https://github.com/bazelbuild/rules_docker/archive/v0.7.0.tar.gz"],
+    sha256 = "17b31b680ada3290ebd03f0efdeb64d20c70aed7727b248a767a53cb015c0dbb",
+    strip_prefix = "rules_docker-8c8b973c15ea7690f4f888d1dd2bcdc92698c358",
+    urls = ["https://github.com/bazelbuild/rules_docker/archive/8c8b973c15ea7690f4f888d1dd2bcdc92698c358.tar.gz"],
 )
 
 http_archive(
     name = "base_images_docker",
-    sha256 = "26b6eb32e19deee8782bd734a2214c6a33dd5ec5b9fb3e92c69a2d5896ad89e3",
-    strip_prefix = "base-images-docker-6830adea69c63a5bf3cf8b93b2f5e56422181839",
-    urls = ["https://github.com/GoogleContainerTools/base-images-docker/archive/6830adea69c63a5bf3cf8b93b2f5e56422181839.tar.gz"],
+    sha256 = "d3df6bce618ed38b490ec1efcb9e45cedb4a832dc463a3a221aaa0078ded40e4",
+    strip_prefix = "base-images-docker-6a2b414ed6300a6847fe00a053e7e9df57d0a539",
+    urls = ["https://github.com/GoogleContainerTools/base-images-docker/archive/6a2b414ed6300a6847fe00a053e7e9df57d0a539.tar.gz"],
 )
 
 http_archive(
