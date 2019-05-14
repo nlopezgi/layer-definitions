@@ -22,9 +22,9 @@ load(
 
 http_archive(
     name = "bazel_toolchains",
-    sha256 = "519231f32fb117c779d21ef9fb7530781cb2387ef53ebad751d6489ac1cab8a3",
-    strip_prefix = "bazel-toolchains-4b7be905026954c3ab3c294b53b623d3f141c11f",
-    urls = ["https://github.com/bazelbuild/bazel-toolchains/archive/4b7be905026954c3ab3c294b53b623d3f141c11f.tar.gz"],
+    sha256 = "e886e0624871dcce823cccc7f9a634c58b0d68fdc3ad6577347826558f1581d8",
+    strip_prefix = "bazel-toolchains-9f6cd65b5fd8bc85634dafc99075556c06d8d3a6",
+    urls = ["https://github.com/bazelbuild/bazel-toolchains/archive/9f6cd65b5fd8bc85634dafc99075556c06d8d3a6.tar.gz"],
 )
 
 http_archive(
