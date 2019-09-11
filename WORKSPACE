@@ -22,17 +22,17 @@ load(
 load(":revisions.bzl", "RULES_DOCKER")
 
 http_archive(
-    name = "bazel_toolchains",
-    sha256 = "322ef052f15d61fdda3ff5c7be4b03d24e6543320b3b4b41da307aebd75b3c20",
-    strip_prefix = "bazel-toolchains-ae9c35af59cfe8af4a631550c0c8d37ff7f4e7da",
-    urls = ["https://github.com/bazelbuild/bazel-toolchains/archive/ae9c35af59cfe8af4a631550c0c8d37ff7f4e7da.tar.gz"],
-)
-
-http_archive(
     name = "io_bazel_rules_docker",
     sha256 = RULES_DOCKER.sha256,
     strip_prefix = "rules_docker-" + RULES_DOCKER.commit,
     urls = ["https://github.com/bazelbuild/rules_docker/archive/" + RULES_DOCKER.commit + ".tar.gz"],
+)
+
+http_archive(
+    name = "bazel_toolchains",
+    sha256 = "0e402919fe73e4f030fc4fb03006597025cabfe6ebc0128c16c71441dc9d1460",
+    strip_prefix = "bazel-toolchains-b2f8803700c0e40c8ec840a733e52d3bee651a1d",
+    urls = ["https://github.com/bazelbuild/bazel-toolchains/archive/b2f8803700c0e40c8ec840a733e52d3bee651a1d.tar.gz"],
 )
 
 http_archive(
@@ -83,7 +83,7 @@ load("@bazel_toolchains//rules:rbe_repo.bzl", "rbe_autoconfig")
 load("@bazel_toolchains//rules:environments.bzl", "clang_env")
 
 # Used by FUS to run the metadata rules from bazel-toolchains.
-load("@bazel_toolchains//repositories:repositories.bzl", bazel_toolchains_repos = "repositories")
+load("@bazel_toolchains//repositories:repositories.bzl", bazel_toolchains_repos = "packages_metadata_repositories")
 
 bazel_toolchains_repos()
 
