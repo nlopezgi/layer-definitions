@@ -93,12 +93,12 @@ bazel_toolchains_go_repos()
 
 rbe_autoconfig(
     name = "rbe_toolchain_config",
-    base_container_digest = "sha256:fbd499b53a377fe2c6c5e65c33bdecd9393871e19a64eaf785fb6491f31849d3",
+    base_container_digest = "sha256:3e98e2e1233de1aed4ed7d7e05450a3f75b8c8d6f6bf53f1b390b5131c790f6f",
     # Note that if you change the `digest`, you might also need to update the
     # `base_container_digest` to make sure asci-toolchain/nosla-ubuntu16_04-bazel-docker-gcloud:<digest>
     # and marketplace.gcr.io/google/rbe-ubuntu16-04:<base_container_digest> have the
     # same Clang and JDK installed.
-    digest = "sha256:6e35c476559829b59530be8e984932279c177d91984455557bf1b66315cd7c7b",
+    digest = "sha256:c38a2be3377f6ee98b8c64deab64b597aa4a8aef1944de67b1312e9d33393e3d",
     env = clang_env(),
     registry = "gcr.io",
     repository = "asci-toolchain/nosla-ubuntu16_04-bazel-docker-gcloud",
